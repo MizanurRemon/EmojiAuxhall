@@ -21,8 +21,7 @@
             android:id="@+id/mainLayoutID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/hideKeyBoardButtonID"
@@ -46,10 +45,13 @@
                 android:weightSum="4">
 
                 <LinearLayout
+                    android:id="@+id/stickersButtonID"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/light_grey"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -67,9 +69,12 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/emojisButtonID"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -87,9 +92,12 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/gifsButtonID"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -107,9 +115,12 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/avatarsButtonID"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -132,13 +143,68 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="80dp">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/stickerLayoutID"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Keyboard" />
+                    android:gravity="center"
+                    android:padding="80dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stickers" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/emojisLayoutID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="80dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Emojis" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gifsLayoutID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="80dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GIFS" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/avatarsLayoutID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="80dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avatars" />
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
